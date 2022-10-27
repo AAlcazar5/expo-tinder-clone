@@ -1,6 +1,6 @@
 ## Expo Tinder Clone
 
-Tinder clone built using Expo; has the ability to authenticate the user using Firebase, match or decline other users have matched you, and message other users. 
+Tinder clone built using Expo; has the ability to authenticate users using Firebase, match or decline other users have matched you, and message other users. 
 
 To get started:
 1. npm i --legacy-peer-deps (or yarn add --legacy-peer-deps)
