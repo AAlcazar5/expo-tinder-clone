@@ -48,26 +48,24 @@ const LoginScreen = () => {
         />
 
         {/* Input Forms */}
-        <View className="mr-28">
-          <TextInput
-            placeholder="Email"
-            placeholderTextColor="white"
-            className="mt-8"
-            value={email}
-            onChangeText={(text) => setEmail(text)}
-            autoCapitalize="none"
-          />
-          <TextInput
-            placeholder="Password"
-            placeholderTextColor="white"
-            className="mt-4"
-            value={password}
-            onChangeText={(text) => setPassword(text)}
-            autoCapitalize="none"
-            secureTextEntry={true}
-          />
-          {<Text className="mt-2 text-white">{validationMessage}</Text>}
-        </View>
+        <TextInput
+          placeholder="Email"
+          placeholderTextColor="white"
+          className="mt-8 w-56"
+          value={email}
+          onChangeText={(text) => setEmail(text)}
+          autoCapitalize="none"
+        />
+        <TextInput
+          placeholder="Password"
+          placeholderTextColor="white"
+          className="mt-8 w-56"
+          value={password}
+          onChangeText={(text) => setPassword(text)}
+          autoCapitalize="none"
+          secureTextEntry={true}
+        />
+        {<Text className="mt-2 text-white">{validationMessage}</Text>}
 
         {/* Log In Button */}
         <View className="flex-row mt-4">

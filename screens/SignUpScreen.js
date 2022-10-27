@@ -52,26 +52,20 @@ const SignUpScreen = () => {
           source={require("../assets/images/tinderWhite.png")}
           className="h-12 w-12"
         />
-
-        {/* Input Forms */}
-        {/* 
-          Add the following input forms:
-          name: displayName
-          phone: phoneNumber
-          picture: photoURL
-        */}
-        <View className="mr-20">
+        <View className="mr-20 fixed">
           <TextInput
             placeholder="Email"
             placeholderTextColor="white"
-            className="mt-8"
+            autoCapitalize="none"
+            className="mt-8 w-56"
             value={email}
             onChangeText={(text) => setEmail(text)}
           />
           <TextInput
             placeholder="Password"
             placeholderTextColor="white"
-            className="mt-4"
+            autoCapitalize="none"
+            className="mt-8 w-56"
             value={password}
             onChangeText={(value) => validateAndSet(value, setPassword)}
             secureTextEntry
@@ -79,7 +73,7 @@ const SignUpScreen = () => {
           <TextInput
             placeholder="Confirm Password"
             placeholderTextColor="white"
-            className="mt-4"
+            className="mt-8 w-56"
             value={confirmPassword}
             onChangeText={(value) => validateAndSet(value, setConfirmPassword)}
             secureTextEntry
